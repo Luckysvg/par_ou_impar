@@ -1,0 +1,16 @@
+import random
+
+numero_usuario = int(input('Digite um número: '))
+escolha = input('Escolha par ou impar: ').strip().lower()
+
+numero_pc = random.randint(1, 100)
+soma = numero_usuario + numero_pc
+
+if soma % 2 == 0 and escolha == "par":
+    print("Você ganhou!")
+elif soma % 2 != 0 and escolha == "impar":
+    print("Você ganhou!")
+else:
+    print("Computador ganhou!")
+
+print(f"Você jogou {numero_usuario}, o PC jogou {numero_pc}, soma = {soma}")
